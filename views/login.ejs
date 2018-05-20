@@ -1,0 +1,31 @@
+
+<% include partials/header %>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<% include partials/body %>
+<form action="/login" method="post">
+	<div class="container">
+		<div class="materialContainer">
+			<div class="box">
+				<div class="title">LOGIN</div>
+				<div class="input">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username">
+					<span class="spin"></span>
+				</div>
+				<div class="input">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password">
+					<span class="spin"></span>
+				</div>
+				<div class="button login">
+					<button><span>GO</span> <i class="fa fa-check"></i></button>
+				</div>
+				<a href="/forgot" class="pass-forgot">Forgot your password?</a>
+				<a href="register" class="pass-forgot"><b>New User? Register</b></a>  <a href="logout" class="pass-forgot"><b>Logout</b></a>
+			</div>
+			</div>
+		</div>
+	</form>
+
+<% include partials/footer %>
